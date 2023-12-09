@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.head {
+    background-image: url(ft/kopi.jpg);
+}
+h1 {
+    text-align: center;
+    color: rgb(201, 140, 54);
+    padding: 80px;
+    background-color: #24262b;
+}
+nav {
+    background-color: rgb(210, 156, 93);
+    display: grid;
+    place-items: center;
+    margin:10px;
+}
+nav ul a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+nav ul a:hover {
+    background: linear-gradient(45deg, #635028, #f3d086);
+    color: white;
+    border-radius: 8px;
+    transition: 1s;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    cursor: pointer;
+    transform: 0.2s ease;
+}
+.item img:hover {
+    transform: scale(1.04);
+}
+.item h4 {
+    padding: 5px;
+    text-align: center;
+}
+.item button {
+    padding: 5px 30px;
+    border: none;
+    overflow: none;
+    background-color: rgb(255, 213, 140);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.item button:hover {
+    transform: scale(1.08);
+}
+@media screen and (max-width:1000px) {
+    .items {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:768px) {
+    .items {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul {
+    list-style: none;
+}
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    color: #ffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(225, 225, 225, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #ffff;
+    transition: all0.5s ease;
+}
+.form {
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 522px;
+    min-width: 370px;
+}
+.card-form {
+    display: flex;
+}
+.left {
+    flex: 1;
+    height: 400px;
+    background-color: #b49855;
+}
+.right {
+    display: flex;
+    flex: 1;
+    height: 400px;
+    background-color: #ffff;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    display: flex;
+    flex: 1;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: #a37c3a9d;
+}
+.left form {
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    line-height: 22px;
+}
+.h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.right form {
+    margin-left: 75px;
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+input, 
+textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+input:focus,
+textarea:focus {
+    outline: 1px solid #f3d086;
+}
+button {
+    border-radius: 20px;
+    border: 1px solid #f3d086;
+    background-color: #f3d086;
+    color: #ffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-out;
+}
+button:hover {
+    opacity: 0.7;
+}
